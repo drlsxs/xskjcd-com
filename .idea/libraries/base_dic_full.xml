@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="base_dic_full">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/25472/include/data/base_dic_full.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
