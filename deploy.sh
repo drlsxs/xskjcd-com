@@ -4,7 +4,7 @@
 set -e
 
 git init
-git add -A
+git add ./
 git commit -m 'deploy'
 
 git remote add origin https://github.com/drlsxs/xskjcd-com.git
