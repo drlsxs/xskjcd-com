@@ -461,10 +461,6 @@ ul {
     width: fit-content;
     font-size: 25px;
     letter-spacing: 1px;
-    position: relative;
-    top: 0;
-    left: 20px;
-    float: left;
   }
   .mySlides h2.center br {
     line-height: 1px;
