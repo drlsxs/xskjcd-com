@@ -107,16 +107,7 @@ iframe#earth {
 #section3 .contents{ padding:0 0 82px; }
 /*#section4 .contents{ padding:100px 0; }*/
 .contents img{width: 100%}
-.model-details {
-  color: #d9d9d9 !important;
-
-}
-.per-intr {
-  color: #d9d9d9 !important;
-}
-.model-details.rczp {
-  color: #5a5a5a !important;
-}
+.model-details {color: #d9d9d9 !important;}  .per-intr {color: #d9d9d9 !important;}  .model-details.rczp {color: #5a5a5a !important;}  .model-details.contactus {color: #5a5a5a !important;}
 #section5 .contents{ padding:37px 0 65px; }
 #sections1{ position: relative; z-index: 1; margin-bottom: -190px; }
 #sections2{ position: relative; z-index: 2; padding-top: 1px;
