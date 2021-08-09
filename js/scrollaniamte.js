@@ -3,6 +3,11 @@ $(window).on("scroll", scrollHandle2);
 $(window).on("scroll", scrollHandle3);
 function scrollHandle() {
   const selfList = document.getElementById("selfList");
+  if (selfList === null) {
+    return;
+  } else {
+
+  }
   const offset = selfList.getBoundingClientRect();
   const offsetTop = offset.top;
   const offsetBottom = offset.bottom;
@@ -20,6 +25,11 @@ function scrollHandle() {
 }
 function scrollHandle2() {
   const selfList = document.getElementById("pictrue-3-box");
+  if (selfList === null) {
+    return;
+  } else {
+
+  }
   const offset = selfList.getBoundingClientRect();
   const offsetTop = offset.top;
   const offsetBottom = offset.bottom;
@@ -38,6 +48,11 @@ function scrollHandle2() {
 }
 function scrollHandle3() {
   const selfList = document.getElementById("section4-list");
+  if (selfList === null) {
+    return;
+  } else {
+
+  }
   const offset = selfList.getBoundingClientRect();
   const offsetTop = offset.top;
   const offsetBottom = offset.bottom;

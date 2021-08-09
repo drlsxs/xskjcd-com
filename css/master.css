@@ -210,5 +210,11 @@ li{list-style: none;}
 .panel-title{padding:0; }
 .per-ad{padding:0; margin: 0;}
 .per-ad li{ padding:10px; width:25%; float: left; text-align: center;}
+.per-ad:hover {
+  color: #1FC2FF;
+}
+.per-ad li:hover {
+  color: #1FC2FF;
+}
 .panel-title:focus{outline: none;}
 #ad-carousel .item img{width:100%;}
