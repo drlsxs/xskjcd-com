@@ -24,9 +24,9 @@ $('.list-unstyled li').on("mouseover", function (e) {
   } else {
     sessionStorage.setItem("current", "0");
   }
-  $(this).find("div.ul").find("div.li").on("click", function (e2) {
+  $(this).find("div.ul").find("div.li").on("mouseover", function (e2) {
     sessionStorage.setItem("current", $(this).index())
-    // e2.stopPropagation();
+    e2.stopPropagation();
   });
 });
 
