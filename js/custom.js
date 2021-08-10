@@ -99,7 +99,7 @@ let autoPlay = () => {
 
 };
 
-// autoPlay()
+autoPlay()
 
 /**
  * @description 实现点击轮播左右切换按钮
