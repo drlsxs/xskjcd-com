@@ -83,18 +83,41 @@ header .menu ul li .ul .li:hover a{ color: #fff; background: #000; }
 .b1_animation .box .left img.img1{ margin:0 0 27px; }
 .b1_animation .box .left img.img3{ margin:28px 0 25px; }
 .b1_animation .box .right{ position:absolute; top: 50%; right: 0; width: 50%; }
+
 /*地球效果开始*/
-iframe#earth {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+iframe#earth {position: absolute;inset: 0;width: 100%;height: 100%;border: none;}
+main {position: relative;}
+main .banner {position: absolute;top: -96px;height: 700px;z-index: 2000;}
+main .banner .my-container {height: 100%;}
+main .banner .my-container .mySlides {height: 100%;}
+.clearfix::after {clear: both;content: '.';display: block;width: 0;height: 0;visibility: hidden;}
+main >.empty {height: calc(700px - 96px);width: 100%;z-index: 10;opacity: 0;}
+header.shouye {background-color: transparent;}
+@media (max-width: 767px) {
+  main .banner {
+    position: absolute;
+    top: -50px;
+    height: 300px;
+  }
+  main >.empty {
+    height: calc(300px - 50px);
+    width: 100%;
+  }
+
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+  main .banner {
+    position: absolute;
+    top: -96px;
+    height: 545px;
+  }
+  main >.empty {
+    height: calc(545px - 96px);
+    width: 100%;
+  }
 
 }
 /*地球效果结束*/
-
-
 
 .content{ border-top: solid 1px #212121; }
 .content .section,.content .sections{ background-position: 50% top; background-repeat: no-repeat; transition: all 4s; -webkit-transition: all 4s; -moz-transition: all 4s; -o-transition: all 4s;}
@@ -105,8 +128,6 @@ iframe#earth {
 #section1 .contents{padding-top: 65px; }
 #section2 .contents{ padding:0 }
 #section3 .contents{ padding:0 0 82px; }
-.add {
-}
 /*#section4 .contents{ padding:100px 0; }*/
 .contents img{width: 100%}
 .model-details {color: #d9d9d9 !important;}  .per-intr {color: #d9d9d9 !important;}  .model-details.rczp {color: #5a5a5a !important;}  .model-details.contactus {color: #5a5a5a !important;}

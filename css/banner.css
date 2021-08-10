@@ -185,7 +185,8 @@ ul {
   font-weight: 700;
   line-height: 1;
   position: absolute;
-  top: 80px;
+  top: 40%;
+  transform: translateY(-50%);
   left: 100px;
   animation-duration: 1.2s;
   animation-fill-mode: both;
@@ -452,8 +453,8 @@ ul {
     width: fit-content;
     font-size: 25px;
     letter-spacing: 1px;
-    position: relative;
-    top: 0;
+    /*position: relative;*/
+    /*top: 0;*/
     left: 20px;
     float: left;
   }
@@ -512,7 +513,6 @@ ul {
   .mySlides h2 {
     font-size: 50px;
     letter-spacing: 10px;
-    top: 40px;
     left: 50px;
   }
 
@@ -525,7 +525,6 @@ ul {
   .mySlides h2.center {
     font-size: 50px;
     letter-spacing: 10px;
-    top: 40px;
     left: 50px;
   }
   .mySlides h2.center span {
