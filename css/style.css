@@ -105,6 +105,8 @@ iframe#earth {
 #section1 .contents{padding-top: 65px; }
 #section2 .contents{ padding:0 }
 #section3 .contents{ padding:0 0 82px; }
+.add {
+}
 /*#section4 .contents{ padding:100px 0; }*/
 .contents img{width: 100%}
 .model-details {color: #d9d9d9 !important;}  .per-intr {color: #d9d9d9 !important;}  .model-details.rczp {color: #5a5a5a !important;}  .model-details.contactus {color: #5a5a5a !important;}

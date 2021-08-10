@@ -4,7 +4,7 @@ var myContainer = document.querySelector(".my-container");
 var carousel = document.getElementsByClassName("carousel");
 var next = document.getElementById("next");
 
-//点击顶部header导航高亮
+//点击顶部header导航高亮显示
 $(".menu .list-unstyled li").each((i) => {
   sessionStorage.getItem("menuIndex") === null ? sessionStorage.setItem("menuIndex", "0") : null;
   // sessionStorage.setItem("current", "0");
