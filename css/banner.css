@@ -8,10 +8,6 @@
   width: 100%;
 }
 
-.mySlides {
-  height: 500px;
-}
-
 .mySlides h2 {
   color: #fff;
 }
@@ -144,7 +140,6 @@ ul {
 }
 
 .mySlides {
-  display: none;
   position: relative;
 }
 
@@ -445,7 +440,7 @@ ul {
 @media (max-width: 767px) {
   .mySlides {
     padding-top: 30px;
-    height: 155px;
+    height: 100%;
     overflow: hidden;
   }
 
@@ -506,7 +501,7 @@ ul {
   .mySlides {
     padding-top: 50px;
     padding-bottom: 120px;
-    height: 300px;
+    height: 100%;
     z-index: 5;
   }
 

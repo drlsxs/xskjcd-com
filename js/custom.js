@@ -46,7 +46,17 @@ $(".title-4 ul li").each((i) => {
 });
 
 
+/**
+ * @description 详情页向上滚动效果
+ */
+function animateTop() {
+  $("#sections2").addClass("ani-sc2");
+  setTimeout(() => {
+    $("#sections2").removeClass("ani-sc2");
+  }, 1500);
+}
 
+animateTop();
 
 
 showSlides(slideIndex);
@@ -82,7 +92,7 @@ goClick();
  */
 let autoPlay = () => {
   let timeId = setInterval(() => {
-    plusSlides(1);
+    // plusSlides(1);
   }, 3000);
   if (!next) return;
   next.addEventListener("click", (e) => {

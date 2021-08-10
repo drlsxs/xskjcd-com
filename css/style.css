@@ -63,7 +63,7 @@ header .menu ul li .ul .li:hover a{ color: #fff; background: #000; }
 .banner .carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left:0;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity: 0; opacity: 0;}
 .banner .carousel-fade .carousel-inner .next.left,.carousel-fade .carousel-inner .prev.right{filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1; opacity:1;}
 .banner #myCarousel{position:relative}
-.banner #myCarousel .carousel-indicators{ margin-bottom:0;bottom:35px;z-index:4; font-size: 0;}
+.banner #myCarousel .carousel-indicators{ margin-bottom:20px;bottom:35px;z-index:4; font-size: 0;}
 .banner #myCarousel .carousel-indicators li{margin:0 7px;width:10px;height:10px; background:#717272; border:none; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px;}
 .banner #myCarousel .carousel-indicators li:hover{width: 36px; background:#018ac6;}
 .banner #myCarousel .carousel-indicators li.active{width: 36px; background:#018ac6;}
@@ -78,7 +78,7 @@ header .menu ul li .ul .li:hover a{ color: #fff; background: #000; }
 .b1_animation .container-fluid .row .col-xs-12{ position: relative; height: 100%; }
 .b1_animation .box{ position:relative; height: 100%; }
 .b1_animation .box img{ max-width: 100%; animation-delay: 0.5s; }
-.b1_animation .box .left{ position: absolute; left: 0; top: 50%; z-index: 1;width: 50%; }
+.b1_animation .box .left{ height: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 1;width: 100%; }
 .b1_animation .box .left img{ margin:0; }
 .b1_animation .box .left img.img1{ margin:0 0 27px; }
 .b1_animation .box .left img.img3{ margin:28px 0 25px; }
@@ -89,7 +89,7 @@ iframe#earth {position: absolute;inset: 0;width: 100%;height: 100%;border: none;
 main {position: relative;}
 main .banner {position: absolute;top: -96px;height: 700px;z-index: 2000;}
 main .banner .my-container {height: 100%;}
-main .banner .my-container .mySlides {height: 100%;}
+main .banner .mySlides {height: 100%;}
 .clearfix::after {clear: both;content: '.';display: block;width: 0;height: 0;visibility: hidden;}
 main >.empty {height: calc(700px - 96px);width: 100%;z-index: 10;opacity: 0;}
 header.shouye {background-color: transparent;}
@@ -118,6 +118,70 @@ header.shouye {background-color: transparent;}
 
 }
 /*地球效果结束*/
+
+/*banner轮播*/
+#myCarousel {
+  height: 100%;
+}
+#myCarousel .carousel-inner {
+  height: 100%;
+  background: transparent;
+}
+#myCarousel .carousel-inner .item {
+  height: 100%;
+  background: transparent;
+}
+#myCarousel .carousel-inner .item a {
+background: transparent;
+}
+#myCarousel .carousel-inner .item a .b1_animation {
+background: transparent;
+}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid {
+background: transparent;
+}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row {
+background: transparent;
+}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 {
+  background: transparent;
+}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 .box {
+  background: transparent;
+}
+.b1_animation .box .left {
+  left: -20%;
+}
+  /*详情页向上出来效果*/
+.ani-sc2 {
+  position: relative;
+  top: 200px;
+}
+#sections2 {
+  animation: animateTop 1.5s ease;
+  position: relative;
+  top: 0;
+}
+
+@keyframes animateTop {
+  0% {
+    position: relative;
+    top: 200px;
+  }
+  50% {
+    position: relative;
+    top: 100px;
+  }
+  100% {
+    position: relative;
+    top: 0;
+  }
+
+
+
+
+
+}
 
 .content{ border-top: solid 1px #212121; }
 .content .section,.content .sections{ background-position: 50% top; background-repeat: no-repeat; transition: all 4s; -webkit-transition: all 4s; -moz-transition: all 4s; -o-transition: all 4s;}
