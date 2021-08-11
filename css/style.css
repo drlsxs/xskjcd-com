@@ -109,20 +109,20 @@ header .menu ul li .ul .li:hover a{ color: #fff; background: #000; }
 /*地球效果开始*/
 iframe#earth {position: absolute;inset: 0;width: 100%;height: 100%;border: none;}
 main {position: relative;}
-main .banner {position: absolute;top: -96px;height: 700px;z-index: 2000;}
+main .banner {position: absolute;top: -96px;height: 72vh;z-index: 2000;}
 main .banner .my-container {height: 100%;}
 main .banner .mySlides {height: 100%;width: 100%}
 .clearfix::after {clear: both;content: '.';display: block;width: 0;height: 0;visibility: hidden;}
-main >.empty {height: calc(700px - 96px);width: 100%;z-index: 10;opacity: 0;}
+main >.empty {height: calc(72vh - 96px);width: 100%;z-index: 10;opacity: 0;}
 header.shouye {background-color: transparent;}
 @media (max-width: 767px) {
   main .banner {
     position: absolute;
     top: -50px;
-    height: 300px;
+    height: 37vh;
   }
   main >.empty {
-    height: calc(300px - 50px);
+    height: calc(37vh - 50px);
     width: 100%;
   }
 
@@ -131,10 +131,10 @@ header.shouye {background-color: transparent;}
   main .banner {
     position: absolute;
     top: -96px;
-    height: 545px;
+    height: 40vh;
   }
   main >.empty {
-    height: calc(545px - 96px);
+    height: calc(40vh - 96px);
     width: 100%;
   }
 
