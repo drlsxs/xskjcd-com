@@ -183,9 +183,9 @@ ul {
   top: 40%;
   transform: translateY(-50%);
   left: 100px;
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-name: fadeInLeft;
+  /*animation-duration: 1.2s;*/
+  /*animation-fill-mode: both;*/
+  /*animation-name: fadeInLeft;*/
   z-index: 1000;
 }
 
@@ -205,10 +205,9 @@ ul {
   left: 0;
   //width: 30%;
   //height: 50%;
-  padding: 20px;
-  animation-duration: 1.2s;
-  animation-fill-mode: both;
-  animation-name: fadeInLeft;
+  /*animation-duration: 1.2s;*/
+  /*animation-fill-mode: both;*/
+  /*animation-name: fadeInLeft;*/
   z-index: 800;
 }
 
@@ -339,38 +338,38 @@ ul {
   animation-name: slideInRight;
 }
 
-@-webkit-keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
+/*@-webkit-keyframes fadeInLeft {*/
+/*  from {*/
+/*    opacity: 0;*/
+/*    -webkit-transform: translate3d(-100%, 0, 0);*/
+/*    transform: translate3d(-100%, 0, 0);*/
+/*  }*/
 
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
+/*  to {*/
+/*    opacity: 1;*/
+/*    -webkit-transform: translate3d(0, 0, 0);*/
+/*    transform: translate3d(0, 0, 0);*/
+/*  }*/
+/*}*/
 
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
+/*@keyframes fadeInLeft {*/
+/*  from {*/
+/*    opacity: 0;*/
+/*    -webkit-transform: translate3d(-100%, 0, 0);*/
+/*    transform: translate3d(-100%, 0, 0);*/
+/*  }*/
 
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
+/*  to {*/
+/*    opacity: 1;*/
+/*    -webkit-transform: translate3d(0, 0, 0);*/
+/*    transform: translate3d(0, 0, 0);*/
+/*  }*/
+/*}*/
 
-.fadeInLeft {
-  -webkit-animation-name: fadeInLeft;
-  animation-name: fadeInLeft;
-}
+/*.fadeInLeft {*/
+/*  -webkit-animation-name: fadeInLeft;*/
+/*  animation-name: fadeInLeft;*/
+/*}*/
 
 @-webkit-keyframes fadeInUp {
   from {
@@ -502,7 +501,7 @@ ul {
     padding-top: 50px;
     padding-bottom: 120px;
     height: 100%;
-    z-index: 5;
+    z-index: 1000;
   }
 
   .mySlides h2 {

@@ -78,18 +78,32 @@ header .menu ul li .ul .li:hover a{ color: #fff; background: #000; }
 .b1_animation .container-fluid .row .col-xs-12{ position: relative; height: 100%; }
 .b1_animation .box{ position:relative; height: 100%; }
 .b1_animation .box img{ max-width: 100%; animation-delay: 0.5s; }
-.b1_animation .box .left{ height: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 1;width: 100%; }
+.b1_animation .box .left{ width: 100%; height: 100%; position: absolute; top: 50%; transform: translateY(-50%); }
 .b1_animation .box .left img{ margin:0; }
 .b1_animation .box .left img.img1{ margin:0 0 27px; }
 .b1_animation .box .left img.img3{ margin:28px 0 25px; }
 .b1_animation .box .right{ position:absolute; top: 50%; right: 0; width: 50%; }
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  padding: 16px;
+  line-height: 30px;
 
+}
+.carousel-control :hover {
+  background: rgba(0, 0, 0, 1) !important;
+
+}
 /*地球效果开始*/
 iframe#earth {position: absolute;inset: 0;width: 100%;height: 100%;border: none;}
 main {position: relative;}
 main .banner {position: absolute;top: -96px;height: 700px;z-index: 2000;}
 main .banner .my-container {height: 100%;}
-main .banner .mySlides {height: 100%;}
+main .banner .mySlides {height: 100%;width: 100%}
 .clearfix::after {clear: both;content: '.';display: block;width: 0;height: 0;visibility: hidden;}
 main >.empty {height: calc(700px - 96px);width: 100%;z-index: 10;opacity: 0;}
 header.shouye {background-color: transparent;}
@@ -120,37 +134,18 @@ header.shouye {background-color: transparent;}
 /*地球效果结束*/
 
 /*banner轮播*/
-#myCarousel {
-  height: 100%;
-}
-#myCarousel .carousel-inner {
-  height: 100%;
-  background: transparent;
-}
-#myCarousel .carousel-inner .item {
-  height: 100%;
-  background: transparent;
-}
-#myCarousel .carousel-inner .item a {
-background: transparent;
-}
-#myCarousel .carousel-inner .item a .b1_animation {
-background: transparent;
-}
-#myCarousel .carousel-inner .item a .b1_animation .container-fluid {
-background: transparent;
-}
-#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row {
-background: transparent;
-}
-#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 {
-  background: transparent;
-}
-#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 .box {
-  background: transparent;
-}
+#myCarousel {height: 100%;}
+#myCarousel .carousel-inner {height: 100%;background: transparent;}
+#myCarousel .carousel-inner .item {height: 100%;background: transparent;}
+#myCarousel .carousel-inner .item a {background: transparent;height: 100%;}
+#myCarousel .carousel-inner .item a .b1_animation {background: transparent;}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid {background: transparent;}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row {background: transparent;}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 {background: transparent;}
+#myCarousel .carousel-inner .item a .b1_animation .container-fluid .row .col-xs-12 .box {background: transparent;}
 .b1_animation .box .left {
-  left: -20%;
+  /*left: -20%;*/
+  margin-top: 0 !important;
 }
   /*详情页向上出来效果*/
 .ani-sc2 {
