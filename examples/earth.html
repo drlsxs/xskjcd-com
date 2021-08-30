@@ -177,8 +177,8 @@
 	 * @param <number> radius ...
 	 */
 	function setRandomDot( group ) {
-		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/标注.png' );
-		var texture2 = new THREE.TextureLoader().load( './imgs/diqiu2/标注光圈.png' );
+		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/标注.webp' );
+		var texture2 = new THREE.TextureLoader().load( './imgs/diqiu2/标注光圈.webp' );
 		posArr.map( pos => {
 			var dotMesh = createPointMesh( pos, texture );
 			var waveMesh = createWaveMesh( pos, texture2 );
@@ -452,7 +452,7 @@
 	 * 初始化背景星空
 	 */
 	function initPoints() {
-		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/gradient.png' );
+		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/gradient.webp' );
 		const positions = [];
 		const colors = [];
 		const geometry = new THREE.BufferGeometry();
@@ -487,7 +487,7 @@
 	 */
 	function initEarth() {
 		// 地球
-		globeTextureLoader.load( './imgs/diqiu2/earth_3.jpg', function ( texture ) {
+		globeTextureLoader.load( './imgs/diqiu2/earth_3.webp', function ( texture ) {
 			var globeGgeometry = new THREE.SphereGeometry( radius, 100, 100 );
 			var globeMaterial = new THREE.MeshStandardMaterial( { map: texture,side:THREE.DoubleSide } );
 			var globeMesh = new THREE.Mesh( globeGgeometry, globeMaterial );
@@ -507,7 +507,7 @@
 			p: { type: 'f', value: 1.7 }, //1.7 								// 强度
 			diffuse: { // 用于实现扫描效果的贴图
 				type: 't',
-				value: new THREE.TextureLoader().load( './imgs/diqiu2/earth_3.jpg' )
+				value: new THREE.TextureLoader().load( './imgs/diqiu2/earth_3.webp' )
 			},
 			glowColor: { type: 'c', value: new THREE.Color( 0x10105 ) }, /// 光罩的颜色
 			viewVector: { // 相机位置
@@ -535,7 +535,7 @@
 	 * 创建地球光晕特效
 	 */
 	function initEarthSprite() {
-		var texture = globeTextureLoader.load( './imgs/diqiu2/earth_aperture.png' );
+		var texture = globeTextureLoader.load( './imgs/diqiu2/earth_aperture.webp' );
 		var spriteMaterial = new THREE.SpriteMaterial( {
 			map: texture,
 			transparent: true,
@@ -552,7 +552,7 @@
 	 */
 	function initSatellite() {
 		// 光环
-		globeTextureLoader.load( './imgs/diqiu2/halo.png', function ( texture ) {
+		globeTextureLoader.load( './imgs/diqiu2/halo.webp', function ( texture ) {
 			var geometry = new THREE.PlaneGeometry( 14, 14 );//矩形平面
 			var material = new THREE.MeshLambertMaterial( {
 				map: texture, //给纹理属性map赋值
@@ -564,7 +564,7 @@
 			groupHalo.add( mesh );
 		} );
 		// 小地球
-		globeTextureLoader.load( './imgs/diqiu2/smallEarth.png', function ( texture ) {
+		globeTextureLoader.load( './imgs/diqiu2/smallEarth.webp', function ( texture ) {
 			var p1 = new THREE.Vector3( - 7, 0, 0 );//顶点1坐标
 			var p2 = new THREE.Vector3( 7, 0, 0 );//顶点2坐标
 			const points = [ p1, p2 ];
@@ -593,7 +593,7 @@
 		geometry.translate( 0, 0, height / 2 );//平移使光柱底部与XOY平面重合
 		var textureLoader = new THREE.TextureLoader(); // TextureLoader创建一个纹理加载器对象
 		var material = new THREE.MeshBasicMaterial( {
-			map: textureLoader.load( './imgs/diqiu2/光柱.png' ),
+			map: textureLoader.load( './imgs/diqiu2/光柱.webp' ),
 			color: 0x44ffaa, //光柱颜色，光柱map贴图是白色，可以通过color调节颜色
 			transparent: true, //使用背景透明的png贴图，注意开启透明计算
 			side: THREE.DoubleSide, //双面可见
@@ -634,7 +634,7 @@
 	 * 光柱效果
 	 */
 	function initLightPillar() {
-		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/标注.png' );
+		var texture = new THREE.TextureLoader().load( './imgs/diqiu2/标注.webp' );
 		var datas = [
 			{
 				lng: 86.39895905468748, lat: 45.15923349468924 //合肥

@@ -26,8 +26,8 @@
 			const encoding = options.encoding !== undefined ? options.encoding : THREE.LinearEncoding;
 			const textureLoader = new THREE.TextureLoader();
 			const flowMap = options.flowMap || undefined;
-			const normalMap0 = options.normalMap0 || textureLoader.load( 'textures/water/Water_1_M_Normal.jpg' );
-			const normalMap1 = options.normalMap1 || textureLoader.load( 'textures/water/Water_2_M_Normal.jpg' );
+			const normalMap0 = options.normalMap0 || textureLoader.load( 'textures/water/Water_1_M_Normal.webp' );
+			const normalMap1 = options.normalMap1 || textureLoader.load( 'textures/water/Water_2_M_Normal.webp' );
 			const cycle = 0.15; // a cycle of a flow map phase
 
 			const halfCycle = cycle * 0.5;

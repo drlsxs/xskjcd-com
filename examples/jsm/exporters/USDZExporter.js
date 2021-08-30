@@ -53,7 +53,7 @@ class USDZExporter {
 			const texture = textures[ id ];
 			const color = id.split( '_' )[ 1 ];
 
-			files[ 'textures/Texture_' + id + '.jpg' ] = await imgToU8( texture.image, color );
+			files[ 'textures/Texture_' + id + '.webp' ] = await imgToU8( texture.image, color );
 
 		}
 
@@ -348,7 +348,7 @@ function buildMaterial( material, textures ) {
         def Shader "Texture_${ texture.id }_${ mapType }"
         {
             uniform token info:id = "UsdUVTexture"
-            asset inputs:file = @textures/Texture_${ id }.jpg@
+            asset inputs:file = @textures/Texture_${ id }.webp@
             float2 inputs:st.connect = </Materials/Material_${ material.id }/Transform2d_${ mapType }.outputs:result>
             token inputs:wrapS = "repeat"
             token inputs:wrapT = "repeat"

@@ -4,7 +4,6 @@
 /* 格展网络：Www.91084.Com */
 /* 主机/服务器：Www.zhaodede.Com */
 /* QQ：6364544  */
-
 .owl-carousel .owl-wrapper:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
 .owl-carousel{display:none;position:relative;width:100%;-ms-touch-action:pan-y}
 .owl-carousel .owl-wrapper{display:none;position:relative;-webkit-transform:translate3d(0px,0px,0px)}
@@ -13,7 +12,7 @@
 .owl-carousel .owl-item{float:left}
 .owl-controls .owl-page,.owl-controls .owl-buttons div{cursor:pointer}
 .owl-controls{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-.grabbing{cursor:url(images/grabbing.png) 8 8,move}
+.grabbing{cursor:url(images/grabbing.webp) 8 8,move}
 .owl-carousel  .owl-wrapper,.owl-carousel  .owl-item{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}
 .owl-theme .owl-controls{ height: 0; }
 .owl-theme .owl-controls .owl-buttons div{transition:all 0.3s;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s; position: absolute; top: 50%; z-index: 1; display:inline-block;zoom:1;*display:inline;}

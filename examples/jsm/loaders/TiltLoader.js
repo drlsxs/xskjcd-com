@@ -59,7 +59,7 @@ class TiltLoader extends Loader {
 		const zip = fflate.unzipSync( new Uint8Array( buffer.slice( 16 ) ) );
 
 		/*
-		const thumbnail = zip[ 'thumbnail.png' ].buffer;
+		const thumbnail = zip[ 'thumbnail.webp' ].buffer;
 		const img = document.createElement( 'img' );
 		img.src = URL.createObjectURL( new Blob( [ thumbnail ] ) );
 		document.body.appendChild( img );

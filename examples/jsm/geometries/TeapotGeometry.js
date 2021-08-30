@@ -25,7 +25,7 @@ import {
  * blinn - Jim Blinn scaled the original data vertically by dividing by about 1.3 to look
  *   nicer. If you want to see the original teapot, similar to the real-world model, set
  *   this to false. True by default.
- *   See http://en.wikipedia.org/wiki/File:Original_Utah_Teapot.jpg for the original
+ *   See http://en.wikipedia.org/wiki/File:Original_Utah_Teapot.webp for the original
  *   real-world teapot (from http://en.wikipedia.org/wiki/Utah_teapot).
  *
  * Note that the bottom (the last four patches) is not flat - blame Frank Crow, not me.
